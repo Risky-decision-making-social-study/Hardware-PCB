@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name monkey-rpi-header-pcb-cache)(type Legacy)(uri ${KIPRJMOD}/monkey-rpi-header-pcb-cache.lib)(options "")(descr ""))
+  (lib (name RPi_Hat-rescue)(type Legacy)(uri ${KIPRJMOD}/RPi_Hat-rescue.lib)(options "")(descr ""))
+  (lib (name MonkeyPowerDelivery)(type Legacy)(uri ${KIPRJMOD}/MonkeyPowerDelivery.lib)(options "")(descr ""))
+  (lib (name monkey-rpi-header-pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/monkey-rpi-header-pcb-rescue.lib)(options "")(descr ""))
+  (lib (name coil)(type Legacy)(uri ${KIPRJMOD}/coil.pretty/XAL6060-562MEB.lib)(options "")(descr ""))
+)

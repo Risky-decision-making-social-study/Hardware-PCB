@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP XAL6060-562MEB
+D Fixed Inductors 5.6uH Shld 20% 10A 15.9mOhms AECQ2
+K
+F https://4donline.ihs.com/images/VipMasterIC/IC/COLC/COLCS07408/COLCS07408-1.pdf?hkey=EF798316E3902B6ED9A73243A3159BB0
+$ENDCMP
+#
+#End Doc Library

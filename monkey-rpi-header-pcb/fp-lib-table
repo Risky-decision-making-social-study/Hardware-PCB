@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Monkey-RPI-Header-PBD)(type KiCad)(uri ${KIPRJMOD}/monkey-rpi-header-pcb.pretty)(options "")(descr ""))
+  (lib (name coil)(type KiCad)(uri ${KIPRJMOD}/coil.pretty)(options "")(descr ""))
+)

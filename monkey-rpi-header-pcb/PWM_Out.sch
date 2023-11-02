@@ -1,0 +1,561 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Driver_LED:PCA9685PW U1
+U 1 1 5FA294A1
+P 6000 3150
+F 0 "U1" H 6000 4331 50  0000 C CNN
+F 1 "PCA9685PW" H 6000 4240 50  0000 C CNN
+F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 6025 2175 50  0001 L CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 5600 3850 50  0001 C CNN
+F 4 "NXP USA Inc." H 6000 3150 50  0001 C CNN "Manufacturer"
+F 5 "PCA9685PW,118" H 6000 3150 50  0001 C CNN "Part"
+	1    6000 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5300 2450 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 5300 2550 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 7400 1950 2    50   Input ~ 0
+Carousel_1_Servo_Trapdoor_Human
+Text GLabel 7400 1650 2    50   Input ~ 0
+Carousel_1_Servo_Trapdoor_Monkey
+Text GLabel 7400 2550 2    50   Input ~ 0
+Carousel_2_Servo_Trapdoor_Human
+Text GLabel 7400 2250 2    50   Input ~ 0
+Carousel_2_Servo_Trapdoor_Monkey
+Text GLabel 7400 2850 2    50   Input ~ 0
+Servo_Lock_Pulse_Out
+Text GLabel 9350 2950 2    50   Output ~ 0
+Additional_Servo_1
+$Comp
+L power:+3V3 #PWR035
+U 1 1 5FA63BAF
+P 1300 2600
+F 0 "#PWR035" H 1300 2450 50  0001 C CNN
+F 1 "+3V3" H 1315 2773 50  0000 C CNN
+F 2 "" H 1300 2600 50  0001 C CNN
+F 3 "" H 1300 2600 50  0001 C CNN
+	1    1300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3350 5050 3350
+Wire Wire Line
+	5300 3450 5050 3450
+Wire Wire Line
+	5300 3550 5050 3550
+Wire Wire Line
+	5300 3650 5050 3650
+Wire Wire Line
+	5300 3750 5050 3750
+Wire Wire Line
+	5300 3850 5050 3850
+Text Label 5050 3350 0    50   ~ 0
+A0
+Text Label 5050 3450 0    50   ~ 0
+A1
+Text Label 5050 3550 0    50   ~ 0
+A2
+Text Label 5050 3650 0    50   ~ 0
+A3
+Text Label 5050 3850 0    50   ~ 0
+A5
+Text Label 5050 3750 0    50   ~ 0
+A4
+$Comp
+L power:GND #PWR036
+U 1 1 5FA817C3
+P 4000 3200
+F 0 "#PWR036" H 4000 2950 50  0001 C CNN
+F 1 "GND" H 4005 3027 50  0000 C CNN
+F 2 "" H 4000 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0001 C CNN
+	1    4000 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 3200 1300 3500
+Wire Wire Line
+	1750 3500 1300 3500
+Connection ~ 1300 3500
+Wire Wire Line
+	1300 3500 1300 3800
+Wire Wire Line
+	1750 3800 1300 3800
+Wire Wire Line
+	1750 4100 1300 4100
+Wire Wire Line
+	1300 4100 1300 3800
+Connection ~ 1300 3800
+Wire Wire Line
+	1750 4400 1300 4400
+Wire Wire Line
+	1300 4400 1300 4100
+Connection ~ 1300 4100
+Text Label 2500 2900 0    50   ~ 0
+A0
+Text Label 2500 3200 0    50   ~ 0
+A1
+Text Label 2500 3500 0    50   ~ 0
+A2
+Text Label 2500 3800 0    50   ~ 0
+A3
+Text Label 2500 4100 0    50   ~ 0
+A4
+Text Label 2500 4400 0    50   ~ 0
+A5
+$Comp
+L Device:R R5
+U 1 1 5FA94C36
+P 7050 1650
+F 0 "R5" V 6843 1650 50  0000 C CNN
+F 1 "220" V 6934 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 1650 50  0001 C CNN
+F 3 "~" H 7050 1650 50  0001 C CNN
+F 4 "Vishay-Dale" H 7050 1650 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 7050 1650 50  0001 C CNN "Part"
+	1    7050 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 1650 7200 1650
+Wire Wire Line
+	7400 1950 7200 1950
+$Comp
+L Device:R R7
+U 1 1 5FA9A040
+P 7050 2250
+F 0 "R7" V 6843 2250 50  0000 C CNN
+F 1 "220" V 6934 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 2250 50  0001 C CNN
+F 3 "~" H 7050 2250 50  0001 C CNN
+F 4 "Vishay-Dale" H 7050 2250 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 7050 2250 50  0001 C CNN "Part"
+	1    7050 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 2250 7200 2250
+$Comp
+L Device:R R9
+U 1 1 5FA9C08B
+P 7050 2850
+F 0 "R9" V 6843 2850 50  0000 C CNN
+F 1 "220" V 6934 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 2850 50  0001 C CNN
+F 3 "~" H 7050 2850 50  0001 C CNN
+F 4 "Vishay-Dale" H 7050 2850 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 7050 2850 50  0001 C CNN "Part"
+	1    7050 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 2850 7200 2850
+Wire Wire Line
+	6900 2850 6700 2850
+$Comp
+L Device:R R10
+U 1 1 5FA9D58C
+P 9000 2950
+F 0 "R10" V 8793 2950 50  0000 C CNN
+F 1 "220" V 8884 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 2950 50  0001 C CNN
+F 3 "~" H 9000 2950 50  0001 C CNN
+F 4 "Vishay-Dale" H 9000 2950 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 9000 2950 50  0001 C CNN "Part"
+	1    9000 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 2950 9150 2950
+$Comp
+L Device:R R4
+U 1 1 5FA9FE7F
+P 4550 2950
+F 0 "R4" H 4620 2996 50  0000 L CNN
+F 1 "10k" H 4620 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4480 2950 50  0001 C CNN
+F 3 "~" H 4550 2950 50  0001 C CNN
+F 4 "Vishay-Dale" H 4550 2950 50  0001 C CNN "Manufacturer"
+F 5 "CRCW080510K0FKEAC" H 4550 2950 50  0001 C CNN "Part"
+	1    4550 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2800 4550 2750
+Wire Wire Line
+	4550 2750 5300 2750
+$Comp
+L power:+3V3 #PWR040
+U 1 1 5FAA4CFF
+P 6000 1650
+F 0 "#PWR040" H 6000 1500 50  0001 C CNN
+F 1 "+3V3" H 6015 1823 50  0000 C CNN
+F 2 "" H 6000 1650 50  0001 C CNN
+F 3 "" H 6000 1650 50  0001 C CNN
+	1    6000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FAAB620
+P 5700 1850
+F 0 "C1" V 5448 1850 50  0000 C CNN
+F 1 "10uF" V 5539 1850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5738 1700 50  0001 C CNN
+F 3 "~" H 5700 1850 50  0001 C CNN
+F 4 "CL21A106KQCLRNC" H 5700 1850 50  0001 C CNN "Part"
+	1    5700 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR039
+U 1 1 5FAAC69C
+P 5300 1650
+F 0 "#PWR039" H 5300 1400 50  0001 C CNN
+F 1 "GND" H 5305 1477 50  0000 C CNN
+F 2 "" H 5300 1650 50  0001 C CNN
+F 3 "" H 5300 1650 50  0001 C CNN
+	1    5300 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 1650 5300 1850
+Wire Wire Line
+	5300 1850 5550 1850
+Wire Wire Line
+	5850 1850 6000 1850
+Wire Wire Line
+	6000 1650 6000 1850
+Connection ~ 6000 1850
+Wire Wire Line
+	6000 1850 6000 2150
+Wire Wire Line
+	4550 3150 4550 3100
+$Comp
+L power:GND #PWR038
+U 1 1 5FAA04DA
+P 4550 3150
+F 0 "#PWR038" H 4550 2900 50  0001 C CNN
+F 1 "GND" H 4555 2977 50  0000 C CNN
+F 2 "" H 4550 3150 50  0001 C CNN
+F 3 "" H 4550 3150 50  0001 C CNN
+	1    4550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5FAC5FD6
+P 4550 2500
+F 0 "#PWR037" H 4550 2250 50  0001 C CNN
+F 1 "GND" H 4555 2327 50  0000 C CNN
+F 2 "" H 4550 2500 50  0001 C CNN
+F 3 "" H 4550 2500 50  0001 C CNN
+	1    4550 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 2650 4550 2650
+Wire Wire Line
+	4550 2650 4550 2500
+$Comp
+L power:GND #PWR041
+U 1 1 5FAC8741
+P 6000 4250
+F 0 "#PWR041" H 6000 4000 50  0001 C CNN
+F 1 "GND" H 6005 4077 50  0000 C CNN
+F 2 "" H 6000 4250 50  0001 C CNN
+F 3 "" H 6000 4250 50  0001 C CNN
+	1    6000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2750 6850 2750
+Wire Wire Line
+	6700 2650 6800 2650
+Wire Wire Line
+	6800 2650 6800 2250
+Wire Wire Line
+	6800 2250 6900 2250
+Wire Wire Line
+	6700 2550 6750 2550
+Wire Wire Line
+	6750 2550 6750 1950
+Wire Wire Line
+	6700 2450 6700 1650
+Wire Wire Line
+	6700 1650 6900 1650
+Wire Wire Line
+	7400 2550 7200 2550
+$Comp
+L Device:R R8
+U 1 1 5FA9AFB9
+P 7050 2550
+F 0 "R8" V 6843 2550 50  0000 C CNN
+F 1 "220" V 6934 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 2550 50  0001 C CNN
+F 3 "~" H 7050 2550 50  0001 C CNN
+F 4 "Vishay-Dale" H 7050 2550 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 7050 2550 50  0001 C CNN "Part"
+	1    7050 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 2750 6850 2550
+Wire Wire Line
+	6850 2550 6900 2550
+$Comp
+L Device:R R6
+U 1 1 5FBFAD56
+P 7050 1950
+F 0 "R6" V 6843 1950 50  0000 C CNN
+F 1 "220" V 6934 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 1950 50  0001 C CNN
+F 3 "~" H 7050 1950 50  0001 C CNN
+F 4 "Vishay-Dale" H 7050 1950 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 7050 1950 50  0001 C CNN "Part"
+	1    7050 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 1950 6900 1950
+Wire Wire Line
+	2050 3500 3450 3500
+Wire Wire Line
+	2050 3800 3450 3800
+Wire Wire Line
+	2050 4100 3450 4100
+Wire Wire Line
+	2050 4400 3450 4400
+Wire Wire Line
+	3450 3200 3450 3500
+Connection ~ 3450 3500
+Wire Wire Line
+	3450 3500 3450 3800
+Connection ~ 3450 3800
+Wire Wire Line
+	3450 3800 3450 4100
+Connection ~ 3450 4100
+Wire Wire Line
+	3450 4100 3450 4400
+Wire Wire Line
+	3450 3200 4000 3200
+Text GLabel 9350 3300 2    50   Output ~ 0
+Additional_Servo_2
+$Comp
+L Device:R R11
+U 1 1 5FD3A2FB
+P 9000 3300
+F 0 "R11" V 8793 3300 50  0000 C CNN
+F 1 "220" V 8884 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 3300 50  0001 C CNN
+F 3 "~" H 9000 3300 50  0001 C CNN
+F 4 "Vishay-Dale" H 9000 3300 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 9000 3300 50  0001 C CNN "Part"
+	1    9000 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 3300 9150 3300
+Text GLabel 9350 3650 2    50   Output ~ 0
+Additional_Servo_3
+$Comp
+L Device:R R12
+U 1 1 5FD3DBE9
+P 9000 3650
+F 0 "R12" V 8793 3650 50  0000 C CNN
+F 1 "220" V 8884 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 3650 50  0001 C CNN
+F 3 "~" H 9000 3650 50  0001 C CNN
+F 4 "Vishay-Dale" H 9000 3650 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 9000 3650 50  0001 C CNN "Part"
+	1    9000 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 3650 9150 3650
+Text GLabel 9350 4700 2    50   Output ~ 0
+Signal_LED_2
+$Comp
+L Device:R R17
+U 1 1 5FD695CE
+P 9000 4350
+F 0 "R17" V 8793 4350 50  0000 C CNN
+F 1 "220" V 8884 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 4350 50  0001 C CNN
+F 3 "~" H 9000 4350 50  0001 C CNN
+F 4 "Vishay-Dale" H 9000 4350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 9000 4350 50  0001 C CNN "Part"
+	1    9000 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 4350 9150 4350
+Text GLabel 9350 5050 2    50   Output ~ 0
+Signal_LED_3
+$Comp
+L Device:R R18
+U 1 1 5FD6B0D2
+P 9000 4700
+F 0 "R18" V 8793 4700 50  0000 C CNN
+F 1 "220" V 8884 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 4700 50  0001 C CNN
+F 3 "~" H 9000 4700 50  0001 C CNN
+F 4 "Vishay-Dale" H 9000 4700 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 9000 4700 50  0001 C CNN "Part"
+	1    9000 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 4700 9150 4700
+Text GLabel 9350 5400 2    50   Output ~ 0
+Signal_LED_4
+$Comp
+L Device:R R19
+U 1 1 5FD6D6A5
+P 9000 5050
+F 0 "R19" V 8793 5050 50  0000 C CNN
+F 1 "220" V 8884 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 5050 50  0001 C CNN
+F 3 "~" H 9000 5050 50  0001 C CNN
+F 4 "Vishay-Dale" H 9000 5050 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 9000 5050 50  0001 C CNN "Part"
+	1    9000 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 5050 9150 5050
+$Comp
+L Device:R R20
+U 1 1 5FD6F308
+P 9000 5400
+F 0 "R20" V 8793 5400 50  0000 C CNN
+F 1 "220" V 8884 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 5400 50  0001 C CNN
+F 3 "~" H 9000 5400 50  0001 C CNN
+F 4 "Vishay-Dale" H 9000 5400 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0805220RFKEAC" H 9000 5400 50  0001 C CNN "Part"
+	1    9000 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 5400 9150 5400
+Text GLabel 9350 4350 2    50   Output ~ 0
+Signal_LED_1
+Wire Wire Line
+	8850 2950 6700 2950
+Wire Wire Line
+	6700 3050 8750 3050
+Wire Wire Line
+	8750 3050 8750 3300
+Wire Wire Line
+	8750 3300 8850 3300
+Wire Wire Line
+	8850 3650 8650 3650
+Wire Wire Line
+	8650 3650 8650 3150
+Wire Wire Line
+	8650 3150 6700 3150
+Wire Wire Line
+	8450 4350 8850 4350
+Wire Wire Line
+	8450 4350 8450 3350
+Wire Wire Line
+	8450 3350 6700 3350
+Wire Wire Line
+	6700 3450 8350 3450
+Wire Wire Line
+	8350 3450 8350 4700
+Wire Wire Line
+	8350 4700 8850 4700
+Wire Wire Line
+	6700 3550 8250 3550
+Wire Wire Line
+	8250 3550 8250 5050
+Wire Wire Line
+	8250 5050 8850 5050
+Wire Wire Line
+	6700 3650 8150 3650
+Wire Wire Line
+	8150 3650 8150 5400
+Wire Wire Line
+	8150 5400 8850 5400
+NoConn ~ 6700 3750
+NoConn ~ 6700 3850
+NoConn ~ 6700 3950
+Wire Wire Line
+	1300 2600 1300 2900
+Connection ~ 1300 3200
+Connection ~ 1300 2900
+Wire Wire Line
+	1300 2900 1300 3200
+Wire Wire Line
+	6700 3250 8550 3250
+Wire Wire Line
+	8550 3250 8550 4000
+Wire Wire Line
+	8550 4000 8850 4000
+$Comp
+L power:GND #PWR0134
+U 1 1 5FF8515E
+P 10400 4000
+F 0 "#PWR0134" H 10400 3750 50  0001 C CNN
+F 1 "GND" H 10405 3827 50  0000 C CNN
+F 2 "" H 10400 4000 50  0001 C CNN
+F 3 "" H 10400 4000 50  0001 C CNN
+	1    10400 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D25
+U 1 1 5FF860EB
+P 9750 4000
+F 0 "D25" H 9743 3745 50  0000 C CNN
+F 1 "LED" H 9743 3836 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9750 4000 50  0001 C CNN
+F 3 "~" H 9750 4000 50  0001 C CNN
+F 4 "https://www.digikey.de/product-detail/de/w%C3%BCrth-elektronik/150080RS75000/732-4984-1-ND/4489916" H 9750 4000 50  0001 C CNN "URL"
+F 5 "150080RS75000" H 9750 4000 50  0001 C CNN "Part"
+	1    9750 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9900 4000 10400 4000
+Wire Wire Line
+	9150 4000 9600 4000
+$Comp
+L Device:R R31
+U 1 1 5FF87FC5
+P 9000 4000
+F 0 "R31" V 8793 4000 50  0000 C CNN
+F 1 "49" V 8884 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 4000 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4000 50  0001 C CNN
+F 4 "Yageo" H 9000 4000 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0749R9L" H 9000 4000 50  0001 C CNN "Part"
+F 6 "https://www.digikey.de/product-detail/en/yageo/RC0805FR-0749R9L/311-49-9CRCT-ND/730931" V 9000 4000 50  0001 C CNN "URL"
+	1    9000 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2900 3150 2900
+Wire Wire Line
+	1300 3200 3150 3200
+Text Notes 1750 2750 0    50   ~ 0
+Address = 0x43  Offset = binary 00011 (set A0 & A1)
+$EndSCHEMATC

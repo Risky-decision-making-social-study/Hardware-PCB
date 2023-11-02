@@ -1,0 +1,661 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L L1
+U 1 1 5FB8EDD5
+P 6400 3050
+F 0 "L1" V 6863 3050 50  0000 C CNN
+F 1 "5.6uH" V 6772 3050 50  0000 C CNN
+F 2 "coil:XAL6060562MEB" H 6400 3050 50  0001 C CNN
+F 3 "http://www.coilcraft.com/pdfs/xal60xx.pdf" H 6400 3050 50  0001 C CNN
+F 4 "L1" V 6499 3050 50  0000 C CNN "Name"
+F 5 "Coilcraft" V 6590 3050 50  0000 C CNN "Manufacturer"
+F 6 "XAL6060-562MEB" V 6400 3050 50  0001 C CNN "Part"
+F 7 "14.5mOhm" V 6681 3050 50  0000 C CNN "Resistance"
+	1    6400 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 3050 5950 3050
+$Comp
+L Device:C C6
+U 1 1 5FB8EDDF
+P 5700 2850
+F 0 "C6" V 5266 2850 50  0000 C CNN
+F 1 "100nF" V 5357 2850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5738 2700 50  0001 C CNN
+F 3 "~" H 5700 2850 50  0001 C CNN
+F 4 "Cboot" V 5539 2850 50  0000 C CNN "Name"
+F 5 "Yageo" V 5700 2850 50  0001 C CNN "Manufacturer"
+F 6 "CC0805KRX7R7BB104" V 5700 2850 50  0001 C CNN "Part"
+F 7 "1mOhm" V 5448 2850 50  0000 C CNN "ESR"
+	1    5700 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 2850 5550 2850
+Wire Wire Line
+	5850 2850 5950 2850
+Wire Wire Line
+	5950 2850 5950 3050
+Connection ~ 5950 3050
+Wire Wire Line
+	5950 3050 6150 3050
+Wire Wire Line
+	6550 3050 6750 3050
+Wire Wire Line
+	7200 2500 7200 2600
+$Comp
+L Device:R R14
+U 1 1 5FB8EDEE
+P 6750 3300
+F 0 "R14" V 6453 3300 50  0000 C CNN
+F 1 "10.2k" V 6544 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 3300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 6750 3300 50  0001 C CNN
+F 4 "Rfbt" V 6650 3300 50  0000 C CNN "Name"
+F 5 "Vishay-Dale" V 6750 3300 50  0001 C CNN "Manufacturer"
+F 6 "CRCW080510K2FKEA" V 6750 3300 50  0001 C CNN "Part"
+	1    6750 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5FB8EDF9
+P 6750 3900
+F 0 "R15" H 6680 3809 50  0000 R CNN
+F 1 "1.96k" H 6680 3900 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 3900 50  0001 C CNN
+F 3 "~" H 6750 3900 50  0001 C CNN
+F 4 "Rfbb" H 6680 3991 50  0000 R CNN "Name"
+F 5 "Vishay-Dale" H 6750 3900 50  0001 C CNN "Manufacturer"
+F 6 "CRCW08051K96FKEA" H 6750 3900 50  0001 C CNN "Part"
+	1    6750 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5FB8EE02
+P 7200 3650
+F 0 "C7" H 7085 3513 50  0000 R CNN
+F 1 "47uF" H 7085 3604 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 7238 3500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/result/smd/?status%3Dall%26pid%3DGRM32ER61C476KE15L" H 7200 3650 50  0001 C CNN
+F 4 "Cout" H 7085 3695 50  0000 R CNN "Name"
+F 5 "MuRata" H 7200 3650 50  0001 C CNN "Manufacturer"
+F 6 "GRM32ER61C476KE15L" H 7200 3650 50  0001 C CNN "Part"
+F 7 "3.037mOhm" H 7085 3786 50  0000 R CNN "ESR"
+	1    7200 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR063
+U 1 1 5FB8EE0F
+P 7200 4150
+F 0 "#PWR063" H 7200 3900 50  0001 C CNN
+F 1 "GND" H 7205 3977 50  0000 C CNN
+F 2 "" H 7200 4150 50  0001 C CNN
+F 3 "" H 7200 4150 50  0001 C CNN
+	1    7200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR061
+U 1 1 5FB8EE15
+P 6750 4150
+F 0 "#PWR061" H 6750 3900 50  0001 C CNN
+F 1 "GND" H 6755 3977 50  0000 C CNN
+F 2 "" H 6750 4150 50  0001 C CNN
+F 3 "" H 6750 4150 50  0001 C CNN
+	1    6750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4050 6750 4150
+$Comp
+L power:GND #PWR059
+U 1 1 5FB8EE20
+P 4950 4100
+F 0 "#PWR059" H 4950 3850 50  0001 C CNN
+F 1 "GND" H 4955 3927 50  0000 C CNN
+F 2 "" H 4950 4100 50  0001 C CNN
+F 3 "" H 4950 4100 50  0001 C CNN
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5FB8EE29
+P 3600 3400
+F 0 "R13" H 3530 3309 50  0000 R CNN
+F 1 "60.4k" H 3530 3400 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3530 3400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 3600 3400 50  0001 C CNN
+F 4 "Rcomp" H 3530 3491 50  0000 R CNN "Name"
+F 5 "Vishay-Dale" H 3600 3400 50  0001 C CNN "Manufacturer"
+F 6 "CRCW080560K4FKEA" H 3600 3400 50  0001 C CNN "Part"
+	1    3600 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3150 3600 3250
+Wire Wire Line
+	3600 3550 3600 3650
+$Comp
+L power:GND #PWR057
+U 1 1 5FB8EE31
+P 3600 4050
+F 0 "#PWR057" H 3600 3800 50  0001 C CNN
+F 1 "GND" H 3605 3877 50  0000 C CNN
+F 2 "" H 3600 4050 50  0001 C CNN
+F 3 "" H 3600 4050 50  0001 C CNN
+	1    3600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FB8EE3A
+P 3600 3800
+F 0 "C4" H 3485 3663 50  0000 R CNN
+F 1 "1nF" H 3485 3754 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3638 3650 50  0001 C CNN
+F 3 "~" H 3600 3800 50  0001 C CNN
+F 4 "Ccomp" H 3485 3936 50  0000 R CNN "Name"
+F 5 "MuRata" H 3600 3800 50  0001 C CNN "Manufacturer"
+F 6 "GRM2165C1H102JA01J" H 3600 3800 50  0001 C CNN "Part"
+F 7 "0Ohm" H 3485 3845 50  0000 R CNN "ESR"
+	1    3600 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3950 3600 4050
+$Comp
+L Device:C C3
+U 1 1 5FB8EE44
+P 3050 3800
+F 0 "C3" H 2935 3663 50  0000 R CNN
+F 1 "10pF" H 2935 3754 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3088 3650 50  0001 C CNN
+F 3 "http://www.samsungsem.com/servlet/FileDownload?type%3Dspec%26file%3DCL21C100JBANNNC.pdf" H 3050 3800 50  0001 C CNN
+F 4 "Ccomp2" H 2935 3936 50  0000 R CNN "Name"
+F 5 "Samsung Electro-Mechanics" H 3050 3800 50  0001 C CNN "Manufacturer"
+F 6 "CL21C100JBANNNC" H 3050 3800 50  0001 C CNN "Part"
+F 7 "0Ohm" H 2935 3845 50  0000 R CNN "ESR"
+	1    3050 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3050 3150 3050 3650
+$Comp
+L power:GND #PWR056
+U 1 1 5FB8EE4E
+P 3050 4050
+F 0 "#PWR056" H 3050 3800 50  0001 C CNN
+F 1 "GND" H 3055 3877 50  0000 C CNN
+F 2 "" H 3050 4050 50  0001 C CNN
+F 3 "" H 3050 4050 50  0001 C CNN
+	1    3050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3950 3050 4050
+$Comp
+L Device:C C5
+U 1 1 5FB8EE58
+P 4150 3800
+F 0 "C5" H 4035 3663 50  0000 R CNN
+F 1 "8.2nF" H 4035 3754 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4188 3650 50  0001 C CNN
+F 3 "http://www.avx.com/docs/Catalogs/ccog.pdf" H 4150 3800 50  0001 C CNN
+F 4 "Css" H 4035 3936 50  0000 R CNN "Name"
+F 5 "AVX" H 4150 3800 50  0001 C CNN "Manufacturer"
+F 6 "12063A822JAT2A" H 4150 3800 50  0001 C CNN "Part"
+F 7 "0Ohm" H 4035 3845 50  0000 R CNN "ESR"
+	1    4150 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 3650 4150 3250
+Wire Wire Line
+	4150 3950 4150 4100
+$Comp
+L power:GND #PWR058
+U 1 1 5FB8EE61
+P 4150 4100
+F 0 "#PWR058" H 4150 3850 50  0001 C CNN
+F 1 "GND" H 4155 3927 50  0000 C CNN
+F 2 "" H 4150 4100 50  0001 C CNN
+F 3 "" H 4150 4100 50  0001 C CNN
+	1    4150 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4450 2950
+$Comp
+L Device:C C2
+U 1 1 5FB8EE74
+P 1500 3250
+F 0 "C2" H 1385 3113 50  0000 R CNN
+F 1 "10uF" H 1385 3204 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 1538 3100 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 1500 3250 50  0001 C CNN
+F 4 "Cin" H 1385 3386 50  0000 R CNN "Name"
+F 5 "TDK" H 1500 3250 50  0001 C CNN "Manufacturer"
+F 6 "C3225X7R1H106M250AC" H 1500 3250 50  0001 C CNN "Part"
+F 7 "1mOhm" H 1385 3295 50  0000 R CNN "ESR"
+	1    1500 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 2850 1500 3100
+$Comp
+L power:GND #PWR055
+U 1 1 5FB8EE86
+P 1500 4150
+F 0 "#PWR055" H 1500 3900 50  0001 C CNN
+F 1 "GND" H 1505 3977 50  0000 C CNN
+F 2 "" H 1500 4150 50  0001 C CNN
+F 3 "" H 1500 4150 50  0001 C CNN
+	1    1500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR054
+U 1 1 5FB8EE8C
+P 1500 2500
+F 0 "#PWR054" H 1500 2350 50  0001 C CNN
+F 1 "+24V" H 1515 2673 50  0000 C CNN
+F 2 "" H 1500 2500 50  0001 C CNN
+F 3 "" H 1500 2500 50  0001 C CNN
+	1    1500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2500 1500 2850
+Connection ~ 1500 2850
+Wire Wire Line
+	1500 3400 1500 3600
+Wire Wire Line
+	7200 3800 7200 4050
+$Comp
+L power:+5V #PWR062
+U 1 1 5FB97564
+P 7200 2500
+F 0 "#PWR062" H 7200 2350 50  0001 C CNN
+F 1 "+5V" H 7215 2673 50  0000 C CNN
+F 2 "" H 7200 2500 50  0001 C CNN
+F 3 "" H 7200 2500 50  0001 C CNN
+	1    7200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR064
+U 1 1 5FBCDD83
+P 1500 6450
+F 0 "#PWR064" H 1500 6300 50  0001 C CNN
+F 1 "+5V" H 1515 6623 50  0000 C CNN
+F 2 "" H 1500 6450 50  0001 C CNN
+F 3 "" H 1500 6450 50  0001 C CNN
+	1    1500 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6650 1500 6450
+$Comp
+L Device:C C8
+U 1 1 5FBD21C0
+P 1700 6900
+F 0 "C8" H 1815 6946 50  0000 L CNN
+F 1 "1uF" H 1815 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1738 6750 50  0001 C CNN
+F 3 "~" H 1700 6900 50  0001 C CNN
+F 4 "CL21B105KOFNNNG" H 1700 6900 50  0001 C CNN "Part"
+	1    1700 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5FBD2C34
+P 3750 6900
+F 0 "C9" H 3865 6946 50  0000 L CNN
+F 1 "100nF" H 3865 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3788 6750 50  0001 C CNN
+F 3 "~" H 3750 6900 50  0001 C CNN
+F 4 "CC0805KRX7R7BB104" H 3750 6900 50  0001 C CNN "Part"
+	1    3750 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 6650 5050 6350
+Wire Wire Line
+	3750 6650 3750 6750
+Connection ~ 3750 6650
+Wire Wire Line
+	3750 6650 5050 6650
+Wire Wire Line
+	3750 7050 3750 7150
+Wire Wire Line
+	2800 7100 2800 7300
+Wire Wire Line
+	1700 7050 1700 7150
+Wire Wire Line
+	1700 6750 1700 6650
+Connection ~ 1700 6650
+Wire Wire Line
+	1700 6650 1500 6650
+$Comp
+L power:GND #PWR065
+U 1 1 5FBDFB91
+P 1700 7150
+F 0 "#PWR065" H 1700 6900 50  0001 C CNN
+F 1 "GND" H 1705 6977 50  0000 C CNN
+F 2 "" H 1700 7150 50  0001 C CNN
+F 3 "" H 1700 7150 50  0001 C CNN
+	1    1700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR066
+U 1 1 5FBDFFAE
+P 2800 7300
+F 0 "#PWR066" H 2800 7050 50  0001 C CNN
+F 1 "GND" H 2805 7127 50  0000 C CNN
+F 2 "" H 2800 7300 50  0001 C CNN
+F 3 "" H 2800 7300 50  0001 C CNN
+	1    2800 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR067
+U 1 1 5FBE027D
+P 3750 7150
+F 0 "#PWR067" H 3750 6900 50  0001 C CNN
+F 1 "GND" H 3755 6977 50  0000 C CNN
+F 2 "" H 3750 7150 50  0001 C CNN
+F 3 "" H 3750 7150 50  0001 C CNN
+	1    3750 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L monkey-rpi-header-pcb-cache:+3.3V #PWR068
+U 1 1 5FBE0DDB
+P 5350 5800
+F 0 "#PWR068" H 5350 5650 50  0001 C CNN
+F 1 "+3.3V" H 5365 5973 50  0000 C CNN
+F 2 "" H 5350 5800 50  0001 C CNN
+F 3 "" H 5350 5800 50  0001 C CNN
+	1    5350 5800
+	1    0    0    -1  
+$EndComp
+Text Notes 1500 2150 0    50   ~ 0
+®WEBENCH Design Report\nDesign : 8 TPS54531DDAR\nTPS54531DDAR 20V-28V to 5.00V @ 5A\nVinMin = 20.0V\nVinMax = 28.0V\nVout = 5.0V\nIout = 5.0A\nDevice = TPS54531DDAR\nTopology = Buck\nCreated = 2020-11-07 01:56:49.172\nBOM Cost = $3.39\nBOM Count = 15\nTotal Pd = 6.03W\n
+Text Notes 1500 6150 0    50   ~ 0
+PMIC - Voltage Regulators - Linear\n5V to 3.3V @ 300mA\nGehäuse / Hülle TSOP5\n
+$Comp
+L MonkeyPowerDelivery:TPS54531DDAR U2
+U 1 1 5FAB315E
+P 4950 2700
+F 0 "U2" H 4950 2905 50  0000 C CNN
+F 1 "TPS54531DDAR" H 4950 2814 50  0000 C CNN
+F 2 "Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias" H 4950 2700 50  0001 C CNN
+F 3 "http://www.ti.com/product/TPS54531" H 4950 2700 50  0001 C CNN
+F 4 "U1" H 4950 2723 50  0000 C CNN "Name"
+F 5 "Texas Instruments" H 4950 2700 50  0001 C CNN "Manufacturer"
+F 6 "TPS54531DDAR" H 4950 2700 50  0001 C CNN "Part"
+	1    4950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2850 2050 2850
+Wire Wire Line
+	3600 3150 4450 3150
+Wire Wire Line
+	3600 3150 3050 3150
+Connection ~ 3600 3150
+Wire Wire Line
+	4150 3250 4450 3250
+Wire Wire Line
+	4950 3450 4950 3600
+Wire Wire Line
+	5450 3250 5700 3250
+Wire Wire Line
+	5700 3250 5700 3750
+$Comp
+L MonkeyPowerDelivery:D_AKA D1
+U 1 1 5FB15AAD
+P 6150 3250
+F 0 "D1" V 6013 3330 50  0000 L CNN
+F 1 "950mV" V 6104 3330 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 6150 3250 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/SBRD10200 N1314 REV.-.pdf" H 6150 3250 50  0001 C CNN
+F 4 "D1" V 6195 3330 50  0000 L CNN "Name"
+F 5 "SMC Diode Solutions" V 6150 3250 50  0001 C CNN "Manufacturer"
+F 6 "SBRD10200TR" V 6150 3250 50  0001 C CNN "Part"
+F 7 "200V" V 6286 3330 50  0000 L CNN "VRRM"
+F 8 "D" H 6150 3250 50  0001 C CNN "Spice_Primitive"
+F 9 "950mV" H 6150 3250 50  0001 C CNN "Spice_Model"
+F 10 "Y" H 6150 3250 50  0001 C CNN "Spice_Netlist_Enabled"
+F 11 "2 1" H 6150 3250 50  0001 C CNN "Spice_Node_Sequence"
+	1    6150 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 3100 6150 3050
+Connection ~ 6150 3050
+Wire Wire Line
+	6150 3050 6250 3050
+$Comp
+L power:GND #PWR060
+U 1 1 5FB170AD
+P 6150 3550
+F 0 "#PWR060" H 6150 3300 50  0001 C CNN
+F 1 "GND" H 6155 3377 50  0000 C CNN
+F 2 "" H 6150 3550 50  0001 C CNN
+F 3 "" H 6150 3550 50  0001 C CNN
+	1    6150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3500 6150 3550
+Connection ~ 7200 3050
+Wire Wire Line
+	7200 3050 7200 3500
+Wire Wire Line
+	5700 3750 6750 3750
+Wire Wire Line
+	6750 3050 6750 3150
+Connection ~ 6750 3050
+Wire Wire Line
+	6750 3050 7200 3050
+Wire Wire Line
+	6750 3450 6750 3750
+Connection ~ 6750 3750
+Wire Wire Line
+	1700 6650 2150 6650
+Wire Wire Line
+	2150 6650 2150 6850
+Wire Wire Line
+	2150 6850 2350 6850
+Connection ~ 2150 6650
+Wire Wire Line
+	2150 6650 2350 6650
+NoConn ~ 3250 6850
+$Comp
+L monkey-rpi-header-pcb-rescue:MonkeyPowerDelivery_NCP164CSN330T1G-monkey-rpi-header-pcb-cache U3
+U 1 1 5FA6AED3
+P 2800 6450
+AR Path="/5FA6AED3" Ref="U3"  Part="1" 
+AR Path="/5FB54EFA/5FA6AED3" Ref="U3"  Part="1" 
+F 0 "U3" H 2800 6565 50  0000 C CNN
+F 1 "MonkeyPowerDelivery_NCP164CSN330T1G" H 2800 6474 50  0000 C CNN
+F 2 "Package_SO:TSOP-5_1.65x3.05mm_P0.95mm" H 2800 6450 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NCP164C-D.PDF" H 2800 6450 50  0001 C CNN
+F 4 "ON Semiconductor" H 2800 6450 50  0001 C CNN "Manufacturer"
+F 5 "NCP164CSN330T1G" H 2800 6450 50  0001 C CNN "Part"
+	1    2800 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5FA72EB5
+P 2050 3250
+F 0 "C10" H 1935 3113 50  0000 R CNN
+F 1 "10uF" H 1935 3204 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 2088 3100 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 2050 3250 50  0001 C CNN
+F 4 "Cin" H 1935 3386 50  0000 R CNN "Name"
+F 5 "TDK" H 2050 3250 50  0001 C CNN "Manufacturer"
+F 6 "C3225X7R1H106M250AC" H 2050 3250 50  0001 C CNN "Part"
+F 7 "1mOhm" H 1935 3295 50  0000 R CNN "ESR"
+	1    2050 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 3100 2050 2850
+Connection ~ 2050 2850
+Wire Wire Line
+	2050 2850 4450 2850
+Wire Wire Line
+	2050 3400 2050 3600
+Wire Wire Line
+	2050 3600 1500 3600
+Connection ~ 1500 3600
+Wire Wire Line
+	1500 3600 1500 4150
+$Comp
+L Device:C C11
+U 1 1 5FA7673D
+P 7800 3650
+F 0 "C11" H 7685 3513 50  0000 R CNN
+F 1 "47uF" H 7685 3604 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 7838 3500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/result/smd/?status%3Dall%26pid%3DGRM32ER61C476KE15L" H 7800 3650 50  0001 C CNN
+F 4 "Cout" H 7685 3695 50  0000 R CNN "Name"
+F 5 "MuRata" H 7800 3650 50  0001 C CNN "Manufacturer"
+F 6 "GRM32ER61C476KE15L" H 7800 3650 50  0001 C CNN "Part"
+F 7 "3.037mOhm" H 7685 3786 50  0000 R CNN "ESR"
+	1    7800 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5FA76E2D
+P 8400 3650
+F 0 "C12" H 8285 3513 50  0000 R CNN
+F 1 "47uF" H 8285 3604 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 8438 3500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/result/smd/?status%3Dall%26pid%3DGRM32ER61C476KE15L" H 8400 3650 50  0001 C CNN
+F 4 "Cout" H 8285 3695 50  0000 R CNN "Name"
+F 5 "MuRata" H 8400 3650 50  0001 C CNN "Manufacturer"
+F 6 "GRM32ER61C476KE15L" H 8400 3650 50  0001 C CNN "Part"
+F 7 "3.037mOhm" H 8285 3786 50  0000 R CNN "ESR"
+	1    8400 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 3050 7800 3050
+Wire Wire Line
+	8400 3050 8400 3500
+Wire Wire Line
+	8400 3800 8400 4050
+Wire Wire Line
+	8400 4050 7800 4050
+Connection ~ 7200 4050
+Wire Wire Line
+	7200 4050 7200 4150
+Wire Wire Line
+	7800 3500 7800 3050
+Connection ~ 7800 3050
+Wire Wire Line
+	7800 3050 8400 3050
+Wire Wire Line
+	7800 3800 7800 4050
+Connection ~ 7800 4050
+Wire Wire Line
+	7800 4050 7200 4050
+Wire Wire Line
+	6250 3500 6150 3500
+Connection ~ 6150 3500
+Wire Wire Line
+	4850 3450 4850 3600
+Wire Wire Line
+	4850 3600 4950 3600
+Connection ~ 4950 3600
+Wire Wire Line
+	4950 3600 4950 4100
+$Comp
+L monkey-rpi-header-pcb-cache:power_PWR_FLAG #FLG0101
+U 1 1 600D9386
+P 7200 2600
+F 0 "#FLG0101" H 7200 2675 50  0001 C CNN
+F 1 "power_PWR_FLAG" V 7200 2728 50  0000 L CNN
+F 2 "" H 7200 2600 50  0001 C CNN
+F 3 "" H 7200 2600 50  0001 C CNN
+	1    7200 2600
+	0    1    1    0   
+$EndComp
+Connection ~ 7200 2600
+Wire Wire Line
+	7200 2600 7200 3050
+Text GLabel 4900 5800 0    50   Input ~ 0
+RPI_3V3
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP7
+U 1 1 5FE7AD9A
+P 5050 6150
+F 0 "JP7" V 5096 6218 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 5005 6218 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 5050 6150 50  0001 C CNN
+F 3 "~" H 5050 6150 50  0001 C CNN
+	1    5050 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 5800 5050 5800
+Wire Wire Line
+	5050 5800 5050 5950
+Wire Wire Line
+	5200 6150 5350 6150
+Wire Wire Line
+	5350 6150 5350 5800
+$Comp
+L monkey-rpi-header-pcb-cache:power_PWR_FLAG #FLG0103
+U 1 1 60004F69
+P 5050 5650
+F 0 "#FLG0103" H 5050 5725 50  0001 C CNN
+F 1 "power_PWR_FLAG" H 5050 5823 50  0000 C CNN
+F 2 "" H 5050 5650 50  0001 C CNN
+F 3 "" H 5050 5650 50  0001 C CNN
+	1    5050 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 5800
+Wire Wire Line
+	5050 5650 5050 5800
+Wire Wire Line
+	3250 6650 3750 6650
+$Comp
+L monkey-rpi-header-pcb-cache:power_PWR_FLAG #FLG0104
+U 1 1 600FA1BC
+P 5350 6150
+F 0 "#FLG0104" H 5350 6225 50  0001 C CNN
+F 1 "power_PWR_FLAG" H 5350 6323 50  0000 C CNN
+F 2 "" H 5350 6150 50  0001 C CNN
+F 3 "" H 5350 6150 50  0001 C CNN
+	1    5350 6150
+	0    1    1    0   
+$EndComp
+Connection ~ 5350 6150
+$EndSCHEMATC
